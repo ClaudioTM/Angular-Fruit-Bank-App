@@ -1,0 +1,13 @@
+<div class="row mt-5">
+    <div class="col-md-4 mb-3" *ngFor="let item of itemData; index as i;">
+        <div class="card text-center">
+            <div class="card-body">
+                <!-- <div class="id">{{ i }}</div> -->
+                <h3 class="card-title">{{item.name}}</h3>
+                <h5 class="card-title">{{item.description}}</h5>
+                <!-- <h5 class="card-title">{{item._id}}</h5> -->
+                <button type="button" (click)="claim(item._id, i)" class="btn btn-success">Claim</button>
+            </div>
+        </div>
+    </div>
+</div>
